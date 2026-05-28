@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You’ve Got Jokes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero" aria-labelledby="app-title">
+      <p class="eyebrow">Pocket comedy for oddly specific moments</p>
+      <h1 id="app-title">You’ve Got Jokes</h1>
+      <p class="intro">
+        Pick the situation you are in, or type your own, and get a quick joke
+        that matches the moment.
+      </p>
+    </section>
+
+    <section class="joke-card" aria-live="polite">
+      <div class="controls">
+        <label for="situation-select">What situation are you in?</label>
+        <select id="situation-select"></select>
+      </div>
+
+      <div class="custom-situation">
+        <label for="custom-input">Or describe your own situation</label>
+        <div class="input-row">
+          <input
+            id="custom-input"
+            type="text"
+            maxlength="70"
+            placeholder="e.g. waiting for laundry, first day at work"
+          />
+          <button id="custom-button" type="button">Make it funny</button>
+        </div>
+      </div>
+
+      <article class="joke-output">
+        <p id="situation-label" class="situation-label"></p>
+        <p id="joke-text" class="joke-text"></p>
+      </article>
+
+      <div class="actions">
+        <button id="new-joke-button" type="button">Tell another joke</button>
+        <button id="copy-button" class="secondary" type="button">Copy joke</button>
+      </div>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
