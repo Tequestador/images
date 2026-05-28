@@ -9,12 +9,21 @@ for the situation you are in instead of a message in your inbox.
 
 ## Where the files are saved
 
-These files are saved in this local git repository, but they are not automatically
-published to GitHub. If you do not see the project on GitHub, push this branch to
-a GitHub repository or download the files from the pull request/code workspace.
+These files are saved in this local git repository. If you created a GitHub pull
+request under `/images`, the app files should appear in that PR folder as:
 
-To publish it yourself, create a GitHub repository, add that repository as a
-remote, and push the branch:
+- `/images/index.html`
+- `/images/styles.css`
+- `/images/app.js`
+- `/images/README.md`
+
+From the PR page, open the **Files changed** tab to review or download these
+files. To test the app on your computer, download or clone the PR branch, then
+follow the viewing instructions below.
+
+If you still do not see the files on GitHub, make sure this branch has been
+pushed to the repository that owns the PR. You can publish it yourself by adding
+a GitHub remote and pushing the branch:
 
 ```bash
 git remote add origin https://github.com/YOUR-USER/YOUR-REPO.git
