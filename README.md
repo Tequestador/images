@@ -77,6 +77,32 @@ http://127.0.0.1:4173/
 7. When you are done testing, return to the terminal and press `Ctrl+C` to stop
    the server.
 
+### Windows example for the downloaded folder
+
+If you downloaded the project to
+`C:\Users\aaron\Documents\images-codex-create-situation-based-joke-app`,
+run these commands in **Command Prompt** or **PowerShell**:
+
+```powershell
+cd "C:\Users\aaron\Documents\images-codex-create-situation-based-joke-app"
+python -m http.server 4173
+```
+
+If `python` is not recognized, try the Windows Python launcher instead:
+
+```powershell
+py -m http.server 4173
+```
+
+Then open this URL in your browser:
+
+```text
+http://127.0.0.1:4173/
+```
+
+Keep the terminal window open while testing. When you are finished, press
+`Ctrl+C` in the terminal to stop the server.
+
 ## How to use it
 
 1. Use the **What situation are you in?** dropdown to choose a preset situation,
